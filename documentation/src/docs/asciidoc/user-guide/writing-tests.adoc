@@ -367,6 +367,21 @@ NOTE: As of JUnit Jupiter 5.4, it is also possible to use methods from JUnit 4's
 `AssumptionViolatedException` to signal that a test should be aborted instead of marked
 as a failure.
 
+[[writing-tests-exceptions]]
+=== Other Exceptions
+
+JUnit Jupiter provides robust support for handling test exceptions. This includes the built-in mechanisms for managing test failures due to exceptions, the role of exceptions in implementing assertions, and how to specifically assert non-throwing conditions in code.
+
+[[writing-tests-uncaught-exceptions]]
+==== Uncaught Exceptions and Test Failures
+
+In JUnit Jupiter, if an exception is thrown and not caught within the test method, the framework will mark the test as failed.
+
+[source,java,indent=0]
+----
+include::{testDir}/example/exception/UncaughtExceptionHandlingTestDemo.java[tags=user_guide]
+----
+
 [[writing-tests-disabling]]
 === Disabling Tests
 
