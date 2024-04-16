@@ -10,10 +10,10 @@
 
 package example.exception;
 
+import java.io.IOException;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.io.IOException;
 
 // @formatter:off
 // tag::user_guide[]
