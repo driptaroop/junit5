@@ -394,7 +394,12 @@ NOTE: JUnit Jupiter itself does not differentiate between failed assertions (`As
 [[writing-tests-assertions-using-assertDoesNotThrow]]
 ==== Asserting Non-Exception Conditions with `assertDoesNotThrow`
 
-The `assertDoesNotThrow` assertion can be used when you want to verify that a particular piece of code does not throw any exceptions. It is specially useful for when you want to
+The `assertDoesNotThrow` assertion can be used when you want to verify that a particular piece of code does not throw any exceptions. It is specially useful for when you want to test if a specific part of the code does not throw any exception.
+
+[source,java,indent=0]
+----
+include::{testDir}/example/exception/AssertDoesNotThrowExceptionDemo.java[tags=user_guide]
+----
 
 [[writing-tests-disabling]]
 === Disabling Tests
