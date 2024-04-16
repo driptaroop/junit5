@@ -384,6 +384,18 @@ include::{testDir}/example/exception/UncaughtExceptionHandlingTestDemo.java[tags
 
 In the above example, the `testThatFailsDueToUncaughtException` method throws a `RuntimeException`. Since the exception is not caught within the test method, JUnit Jupiter will automatically fail the test.
 
+[[writing-tests-assertions-using-exceptions]]
+==== Assertions Using Exceptions
+
+Assertions in JUnit Jupiter are implemented using exceptions. The framework provides a set of assertion methods in the `org.junit.jupiter.api.Assertions` class, which throw `AssertionError` when an assertion fails. This mechanism is a core aspect of how JUnit handles assertion failures as exceptions.
+
+NOTE: JUnit Jupiter itself does not differentiate between failed assertions (`AssertionError`) and other types of exceptions. All uncaught exceptions lead to a test failure. However, Integrated Development Environments (IDEs) and other tools may distinguish between these two types of failures by checking whether the thrown exception is an instance of AssertionError.
+
+[[writing-tests-assertions-using-assertDoesNotThrow]]
+==== Asserting Non-Exception Conditions with `assertDoesNotThrow`
+
+The `assertDoesNotThrow` assertion can be used when you want to verify that a particular piece of code does not throw any exceptions. It is specially useful for when you want to
+
 [[writing-tests-disabling]]
 === Disabling Tests
 
