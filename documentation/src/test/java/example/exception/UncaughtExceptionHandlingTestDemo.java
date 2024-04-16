@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 class UncaughtExceptionHandlingTestDemo {
 
     @Test
-    void testThatFailsDueToUncaughtException() {
+    void failsDueToUncaughtException() {
         throw new RuntimeException("This exception will cause a test failure");
     }
 }
