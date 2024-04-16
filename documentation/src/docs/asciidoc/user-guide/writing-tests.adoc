@@ -379,7 +379,7 @@ In JUnit Jupiter, if an exception is thrown and not caught within the test metho
 
 [source,java,indent=0]
 ----
-include::{testDir}/example/exception/UncaughtExceptionHandlingTestDemo.java[tags=user_guide]
+include::{testDir}/example/exception/UncaughtExceptionHandlingDemoTestCase.java[tags=user_guide]
 ----
 
 In the above example, the `testThatFailsDueToUncaughtException` method throws a `RuntimeException`. Since the exception is not caught within the test method, JUnit Jupiter will automatically fail the test.
@@ -398,7 +398,7 @@ The `assertDoesNotThrow` assertion can be used when you want to verify that a pa
 
 [source,java,indent=0]
 ----
-include::{testDir}/example/exception/AssertDoesNotThrowExceptionDemo.java[tags=user_guide]
+include::{testDir}/example/exception/AssertDoesNotThrowExceptionDemoTestCase.java[tags=user_guide]
 ----
 
 [[writing-tests-disabling]]
